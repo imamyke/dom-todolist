@@ -1,0 +1,101 @@
+.m-5{
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  padding-bottom: 10px;
+}
+
+.content__wrapper {
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+}
+.content-group{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 auto;
+  width: 280px;
+}
+.title{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: #FFB200;
+}
+.btn-blue{
+  display: inline-block;
+  vertical-align: top;
+  background-color: #277BC0;
+  border: 1px solid #277BC0;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn-blue:hover,.btn-blue:active{
+  background-color: #4a8ec5;
+  border: 1px solid #4a8ec5;
+  color: #fff;
+}
+
+#my-todo,#my-done{
+  overflow-y: scroll;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#my-todo::-webkit-scrollbar,
+#my-done::-webkit-scrollbar{
+  width: 5px;
+}
+#my-todo::-webkit-scrollbar-thumb,
+#my-done::-webkit-scrollbar-thumb{
+  background: #aaa; 
+  border-radius: 2px;
+}
+li{    
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 36px;
+  border-bottom: 1px solid #ddd;
+}
+li.active{
+  user-select: none;
+}
+.title-item{
+  padding-left: 10px;
+}
+i{
+  color: #bbb;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+i:hover{
+  color: #FFCB42;
+}
+label,i{
+  display: inline-block;
+  vertical-align: top;
+  line-height: 36px;  
+}
+
+.form--custom {
+width: auto;
+}
+
+.checked {
+color: #ccc;
+text-decoration: line-through;
+font-style: italic;
+}
+.fa {
+margin: 0 5px;
+color: #bbb;
+}
+
+li > label[for="todo"] {
+width: 210px;
+}
